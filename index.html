@@ -1,15 +1,10 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>jQuery Countdown Clock Plugin</title>
-	<link type="text/css" href="demo.css?v=1.0.0" rel="stylesheet">
-	<link type="text/css" href="../jquery.countdown.css?v=1.0.0" rel="stylesheet">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="../jquery.countdown.min.js?v=1.0.0"></script>
-</head>
 <body>
-	<ul id="example">
+	First Meet: 28-June-2020
+	Jal: 29-June-2020
+	Sidsar: 1-July-2020
+	Baby: <ul id="example">
 		<li><span class="days">00</span><p class="days_text">Days</p></li>
 		<li class="seperator">:</li>
 		<li><span class="hours">00</span><p class="hours_text">Hours</p></li>
@@ -25,7 +20,7 @@
 		var month = now.getMonth() + 1;
 		var year = now.getFullYear() + 1;
 
-		var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+		var nextyear = 3 + '/' + 0 + '/' + 2023 + ' 12:00:00';
 
 		$('#example').countdown({
 			date: nextyear, // TODO Date format: 07/27/2017 17:00:00
@@ -37,10 +32,5 @@
 		});
 	</script>
 
-	<ul id="buttons">
-		<li><a href="https://epiksel.github.io/countdown" class="btn download">Download</a></li>
-		<li><a href="https://openix.io/en/product/preview?pid=57" class="btn download">OpenCart Extension</a></li>
-		<li><a href="https://github.com/epiksel/countdown" class="btn forkme">Fork Me</a></li>
-	</ul>
 </body>
 </html>
