@@ -30,14 +30,14 @@
 
 		var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
 
-		$('.countdown').countdown({
-    date: '07/27/2015 17:00:00',
-    offset: +2,
-    day: 'Day',
-    days: 'Days'
-}, function () {
-    alert('Done!');
-});
+		$('#example').countdown({
+			date: nextyear, // TODO Date format: 07/27/2017 17:00:00
+			offset: +2, // TODO Your Timezone Offset
+			day: 'Day',
+			days: 'Days'
+		}, function () {
+			alert('Done!');
+		});
 	</script>
 
 </body>
