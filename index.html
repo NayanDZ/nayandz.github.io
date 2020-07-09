@@ -20,16 +20,16 @@
 		var month = now.getMonth() + 1;
 		var year = now.getFullYear() + 1;
 
-		var nextyear = 3 + '/' + 0 + '/' + 2023 + ' 12:00:00';
+		var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
 
-		$('#example').countdown({
-			date: nextyear, // TODO Date format: 07/27/2017 17:00:00
-			offset: +2, // TODO Your Timezone Offset
-			day: 'Day',
-			days: 'Days'
-		}, function () {
-			alert('Done!');
-		});
+		$('.countdown').countdown({
+    date: '07/27/2015 17:00:00',
+    offset: +2,
+    day: 'Day',
+    days: 'Days'
+}, function () {
+    alert('Done!');
+});
 	</script>
 
 </body>
